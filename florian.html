@@ -34,6 +34,7 @@ Check my resume for more information on my skills and personal projects.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
     <link rel="stylesheet" href="./animations.css">
     <style>
         * {
@@ -55,7 +56,14 @@ Check my resume for more information on my skills and personal projects.">
 <body class="flex lg:flex-row flex-col overflow-x-hidden">
     <div class="container mx-auto lg:w-[50%] w-[100%] px-14 2xl:px-28 pb-20 lg:pb-10">
         <div class="flex my-12 flex-col lg:flex-row">
-            <img class="scale-up-center  m-auto lg:m-0" width="66px" height="66px" src="./me.png" alt="icon florian">
+            <div data-tooltip-target="tooltip-me" data-tooltip-placement="bottom">
+                <img class="scale-up-center m-auto lg:m-0 pointer-events-none" width="66px" height="66px" src="./me.png"
+                    alt="icon florian">
+            </div>
+            <div id="tooltip-me" role="tooltip"
+                class="transition-opacity duration-200 inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 tooltip">
+                Hey, this is me!
+            </div>
             <div class="flex flex-col ml-6">
                 <h1 class="text-3xl font-bold slide-top mt-6 m-auto lg:m-0">Florian Heysen</h1>
                 <h2 class="text-lg font-medium text-slate-500 slide-top m-auto lg:m-0">Fullstack Developper</h2>
@@ -118,6 +126,75 @@ Check my resume for more information on my skills and personal projects.">
         </div>
         <hr class="pb-10 slide-top">
         <div class="slide-top">
+            <h3 class="text-lg text-slate-500 pb-6">Personal projects</h3>
+            <div class="flex flex-col">
+                <div id="tooltip-reliable" role="tooltip"
+                    class="transition-opacity duration-200 inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 tooltip">
+                    SaaS Project
+                </div>
+                <a class="group inline-flex w-fit items-center gap-1 text-sm" data-tooltip-target="tooltip-reliable"
+                    target="_blank" href="https://reliable.to/">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1.68421 0C0.754047 0 0 0.754047 0 1.68421V14.3158C0 15.246 0.754047 16 1.68421 16H14.3158C15.246 16 16 15.246 16 14.3158V1.68421C16 0.754047 15.246 0 14.3158 0H1.68421ZM10.466 8.38215C9.81199 8.97774 8.92494 9.31234 8 9.31234L8 2.96063C8.92494 2.96063 9.81199 3.29523 10.466 3.89082C11.12 4.4864 11.4875 5.29419 11.4875 6.13648C11.4875 6.97877 11.12 7.78656 10.466 8.38215ZM3.73753 5.6203L3.73753 13.0394H12.2625L3.73753 5.6203Z"
+                            fill="#66748C" />
+                    </svg>
+                    <h4 class="text-lg font-medium ml-2">Reliable</h4>
+                    View
+                    <svg class="w-2.5 h-auto mt-1 group-hover:translate-x-1 transition ease-in-out" width="17"
+                        height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1 7C0.447715 7 -3.73832e-07 7.44771 -3.49691e-07 8C-3.2555e-07 8.55228 0.447715 9 1 9L13.0858 9L7.79289 14.2929C7.40237 14.6834 7.40237 15.3166 7.79289 15.7071C8.18342 16.0976 8.81658 16.0976 9.20711 15.7071L16.0303 8.88388C16.5185 8.39573 16.5185 7.60427 16.0303 7.11612L9.20711 0.292893C8.81658 -0.0976318 8.18342 -0.0976318 7.79289 0.292893C7.40237 0.683417 7.40237 1.31658 7.79289 1.70711L13.0858 7L1 7Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+                <div id="tooltip-overdo" role="tooltip"
+                    class="transition-opacity duration-200 inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 tooltip">
+                    Agency Project
+                </div>
+                <a class="group mt-5 inline-flex w-fit items-center gap-1 text-sm" data-tooltip-target="tooltip-overdo"
+                    target="_blank" href="https://overdo.net/">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.1058 6.18083C7.25237 1.35797 2.84634 1.71885 1 2.50214C3.58767 1.1593 6.1054 -1.07867 10.1058 0.599852C13.6083 2.42381 14.7823 5.62133 14.9315 6.9921C15.7595 12.643 12.078 14.0557 8.67909 16C10.3436 14.7365 12.9592 11.0037 10.1058 6.18083Z"
+                            fill="#66748C" />
+                        <path
+                            d="M5.23818 9.34363C4.43251 8.16869 4.63206 6.50418 4.83255 5.8188C0.930064 5.04947 0.316045 9.4415 1.62943 11.3858C4.19192 15.1792 7.61604 12.6167 7.61604 11.2459C7.05655 11.2459 6.04386 10.5186 5.23818 9.34363Z"
+                            fill="#66748C" />
+                    </svg>
+                    <h4 class="text-lg font-medium ml-2">Overdo</h4>
+                    View
+                    <svg class="w-2.5 h-auto mt-1 group-hover:translate-x-1 transition ease-in-out" width="17"
+                        height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1 7C0.447715 7 -3.73832e-07 7.44771 -3.49691e-07 8C-3.2555e-07 8.55228 0.447715 9 1 9L13.0858 9L7.79289 14.2929C7.40237 14.6834 7.40237 15.3166 7.79289 15.7071C8.18342 16.0976 8.81658 16.0976 9.20711 15.7071L16.0303 8.88388C16.5185 8.39573 16.5185 7.60427 16.0303 7.11612L9.20711 0.292893C8.81658 -0.0976318 8.18342 -0.0976318 7.79289 0.292893C7.40237 0.683417 7.40237 1.31658 7.79289 1.70711L13.0858 7L1 7Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+                <div id="tooltip-pardefaut" role="tooltip"
+                    class="transition-opacity duration-200 inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 tooltip">
+                    Streetwear brand + Ecommerce
+                </div>
+                <a class="group mt-5 inline-flex w-fit items-center gap-2 text-sm"
+                    data-tooltip-target="tooltip-pardefaut" target="_blank" href="https://pardefaut.com/">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.7579 3H0V12.0944H5.08557V9.96368H10.7579C13.868 9.96368 16 8.50859 16 6.48184C16 4.4551 13.868 3 10.7579 3ZM9.77995 7.10546H5.08557V5.85823H9.77995C10.2885 5.85823 10.9144 5.85823 10.9144 6.48184C10.9144 7.10546 10.2885 7.10546 9.77995 7.10546Z"
+                            fill="#66748C" />
+                    </svg>
+                    <h4 class="text-lg font-medium ml-2">Pardéfaut</h4>
+                    View
+                    <svg class="w-2.5 h-auto mt-1 group-hover:translate-x-1 transition ease-in-out" width="17"
+                        height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M1 7C0.447715 7 -3.73832e-07 7.44771 -3.49691e-07 8C-3.2555e-07 8.55228 0.447715 9 1 9L13.0858 9L7.79289 14.2929C7.40237 14.6834 7.40237 15.3166 7.79289 15.7071C8.18342 16.0976 8.81658 16.0976 9.20711 15.7071L16.0303 8.88388C16.5185 8.39573 16.5185 7.60427 16.0303 7.11612L9.20711 0.292893C8.81658 -0.0976318 8.18342 -0.0976318 7.79289 0.292893C7.40237 0.683417 7.40237 1.31658 7.79289 1.70711L13.0858 7L1 7Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <hr class="pb-10 mt-10 slide-top">
+        <div class="slide-top">
             <h3 class="text-lg text-slate-500 pb-6">Links & Certifications</h3>
             <div class="flex flex-col">
                 <a class="group inline-flex items-center gap-1 text-sm" target="_blank"
@@ -172,6 +249,7 @@ Check my resume for more information on my skills and personal projects.">
                 </a>
             </div>
         </div>
+    </div>
     </div>
     <div class="bg-black text-white px-14 lg:px-18 lg:w-[35%] w-[100%] pb-10 slide-left">
         <h4 class="text-lg text-slate-400 pt-10 pb-6">About</h4>
@@ -254,6 +332,15 @@ Check my resume for more information on my skills and personal projects.">
             src="https://open.spotify.com/embed/track/4gn9UXHsnYsUa6mql2g1su?utm_source=generator" width="100%"
             height="80" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+        <script>
+            setTimeout(function () {
+                console.clear();
+                console.log('🥚 Hey!');
+                console.log('Nice to see you there, hope we can exchange on Twitter! DM me @florian_btc :)');
+                console.log('Until then, have a great day!')
+            }, 2000);
+        </script>
 </body>
 
 </html>
