@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="icon" type="image/webp" href="./me.webp" />
 
-    <title>Florian Heysen | Développeur Créatif</title>
-    <meta name="title" content="Florian Heysen | Développeur Créatif">
+    <title>Florian Heysen | Développeur Front-End</title>
+    <meta name="title" content="Florian Heysen | Développeur Front-End">
     <meta name="description" content="Développeur React travaillant actuellement chez PerfectStay à Paris. 
     Consultez mon CV pour plus d'informations sur mes compétences et mes projets personnels.">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.heysen.fr/">
-    <meta property="og:title" content="Florian Heysen | Développeur Créatif">
+    <meta property="og:title" content="Florian Heysen | Développeur Front-End">
     <meta property="og:description" content="Développeur React travaillant actuellement chez PerfectStay à Paris. 
     Consultez mon CV pour plus d'informations sur mes compétences et mes projets personnels.">
     <meta property="og:image" content="https://www.heysen.fr/og-image-fr.jpg">
 
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.heysen.fr/">
-    <meta property="twitter:title" content="Florian Heysen | Développeur Créatif">
+    <meta property="twitter:title" content="Florian Heysen | Développeur Front-End">
     <meta property="twitter:description" content="Développeur React travaillant actuellement chez PerfectStay à Paris. 
     Consultez mon CV pour plus d'informations sur mes compétences et mes projets personnels.">
     <meta property="twitter:image" content="https://www.heysen.fr/og-image-fr.jpg">
@@ -32,12 +32,13 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600;700;800&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
     <link rel="stylesheet" href="./animations.css">
+    <link rel="stylesheet" href="./satoshi.css">
     <style>
         ::selection {
             background-color: #141e5125;
         }
         * {
-            font-family: 'DM Sans', sans-serif;
+            font-family: 'Satoshi-Medium', sans-serif;
             background: rgba(0, 0, 0, 0);
         }
         html {
@@ -68,10 +69,10 @@
 </head>
 
 <body class="flex lg:flex-row flex-col overflow-x-hidden">
-    <a href="/en/" title="Switch to English" class="absolute flex items-center top-8 left-8 text-lg z-50 slide-right">
+    <!--<a href="/en/" title="Switch to English" class="absolute flex items-center top-8 left-8 text-lg z-50 slide-right">
         <img width="22" height="auto" src="./en.webp" alt="">
         <span class="text-xs ml-1 text-slate-500">EN</span>
-    </a>
+    </a>-->
     <div class="container mx-auto lg:w-[50%] w-[100%] px-14 2xl:px-28 pb-20 lg:pb-10">
         <div class="flex my-12 flex-col lg:flex-row">
             <div data-tooltip-target="tooltip-me" data-tooltip-placement="bottom">
@@ -79,15 +80,15 @@
             </div>
             <div id="tooltip-me" role="tooltip"
                 class="transition-opacity duration-200 inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 tooltip">
-                Ça, c'est mon avatar :)
+                👋
             </div>
             <div class="flex flex-col ml-6">
                 <h1 class="text-3xl font-bold slide-top mt-6 m-auto lg:m-0">Florian Heysen</h1>
-                <h2 class="text-lg font-medium text-slate-500 slide-top m-auto lg:m-0">Développeur Créatif</h2>
+                <h2 class="text-lg font-medium text-slate-500 slide-top m-auto lg:m-0">Développeur Front-End</h2>
             </div>
         </div>
         <a class="group mt-1 inline-flex text-slate-600 hover:text-black items-center gap-1 text-base slide-top" target="_blank"
-            href="/resume-florianheysen.pdf">
+            href="/cv-florianheysen.pdf">
             Télécharger mon CV <span class="text-xs mt-1">(.pdf)</span>
             <svg class="w-2.5 h-auto mt-1 group-hover:translate-x-1 transition ease-in-out" width="17"
                 height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -101,6 +102,9 @@
             <div class="pb-10">
                 <h4 class="text-lg font-medium">Développeur React, PerfectStay</h4>
                 <h4 class="text-sm text-slate-500 pb-4">CDI | 2022 - Aujourd'hui</h4>
+                <p class="mb-4">En tant que développeur React, je participe à des projets visant à offrir la meilleure expérience aux équipes internes et à rendre les flux de travail plus faciles, plus rapides et intuitifs.
+                    <br><br>
+                Actuellement, je me concentre sur la migration de l'ancienne version d'un outil interne vers React avec Material UI.</p>
                 <a href="https://www.perfectstay.com/en/" target="_blank"
                     class="group inline-flex justify-center items-center gap-2">
                     Voir le site
@@ -115,10 +119,9 @@
             <div class="pb-10">
                 <h4 class="text-lg font-medium">Assistant Webmarketing, O2feel e-bikes</h4>
                 <h4 class="text-sm text-slate-500 pb-4">Alternance | 2020 - 2022</h4>
-                <p>En charge des campagnes publicitaires et de la stratégie digitale sur différents supports 
-                    (Google, Facebook, Instagram, LinkedIn, et plus encore). 
-                    J'ai assisté l'équipe digitale sur les différents sites web (DNS, Hébergement, etc.) 
-                    J'ai également assisté au développement de l'architecture d'une application mobile.</p>
+                <p>En tant qu'assistant webmarketing, en charge des campagnes publicitaires et de la stratégie digitale sur différents supports. Assisté l'équipe digitale sur les différents sites internet. A également aidé au développement d'une architecture d'application mobile web3 et à la connectivité des vélos.
+                    <br><br>
+                    Concentré sur les publicités numériques et la maintenance de plusieurs sites web WordPress.</p>
                 <a href="https://o2feel.com/" target="_blank"
                     class="group mt-4 inline-flex justify-center items-center gap-2">
                     Voir le site
@@ -133,9 +136,9 @@
             <div class="pb-8">
                 <h4 class="text-lg font-medium">Développeur Front-end, Apresta</h4>
                 <h4 class="text-sm text-slate-500 pb-4">Stage | 2019 - 2020</h4>
-                <p>J'ai développé plusieurs sites web pour des clients en autonomie en utilisant Wordpress, 
-                    Prestashop et JS Vanilla. Gestion de crise dans des délais courts et relation client avec de grands groupes 
-                    comme Pictime, en France. Intégration front-end de maquettes "pixel perfect" pour des clients importants d'Apresta.
+                <p>En tant que développeur frontal junior, j'ai créé plusieurs sites web pour des clients de manière indépendante en utilisant WordPress et PrestaShop. Gestion de crise sur des délais courts et relation client avec de grands groupes comme Pictime. Intégration parfaite pour les clients importants de l'agence.
+                    <br><br>
+                    Concentré sur les sites web d'entreprise WordPress et les intégrations pixel perfect.
                 </p>
                 <a href="https://apresta.fr/" target="_blank"
                     class="group mt-4 inline-flex justify-center items-center gap-2 font-base">
@@ -178,16 +181,18 @@
             <div class="flex flex-col">
                 <div id="tooltip-reliable" role="tooltip"
                     class="transition-opacity duration-200 inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 tooltip">
-                    Alternative à Truspilot Open Source
+                   Marketing Digital assisté pas IA
                 </div>
                 <a class="group inline-flex w-fit items-center gap-1 text-sm" data-tooltip-target="tooltip-reliable"
-                    target="_blank" href="https://reliable.to/">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M1.68421 0C0.754047 0 0 0.754047 0 1.68421V14.3158C0 15.246 0.754047 16 1.68421 16H14.3158C15.246 16 16 15.246 16 14.3158V1.68421C16 0.754047 15.246 0 14.3158 0H1.68421ZM10.466 8.38215C9.81199 8.97774 8.92494 9.31234 8 9.31234L8 2.96063C8.92494 2.96063 9.81199 3.29523 10.466 3.89082C11.12 4.4864 11.4875 5.29419 11.4875 6.13648C11.4875 6.97877 11.12 7.78656 10.466 8.38215ZM3.73753 5.6203L3.73753 13.0394H12.2625L3.73753 5.6203Z"
-                            fill="#66748C" />
-                    </svg>
-                    <h4 class="text-lg font-medium ml-2">Reliable</h4>
+                    target="_blank" href="https://magize.co/">
+                    <svg width="16" height="16" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.2207 8.45449C7.93149 3.49095 7.17346 1.79246 12.8268 0.565753C14.068 0.29637 18.1936 0.0479448 21.9956 0.012808C28.4653 -0.0457534 29.003 0.0442484 30.3864 1.42075C32.2351 3.26143 36.9168 14.0369 36.361 15.3684C34.897 18.8716 25.4414 15.4134 15.2207 8.45449Z" fill="#69748D"/>
+                        <path d="M2.38265 24.2326C-0.79377 23.1137 -0.79444 11.9747 2.38198 7.50127C4.22124 4.91039 7.84271 5.87943 14.8923 10.8473C21.176 15.2758 22.4924 18.2199 18.9427 19.9033C15.5461 21.5147 3.56072 24.648 2.38265 24.2326Z" fill="#69748D"/>
+                        <path d="M31.8706 36.0632C30.4623 35.2008 29.7971 23.454 31.0047 20.7546C31.7256 19.142 34.5751 19.4386 36.9272 21.3711C41.8624 25.4266 37.0997 39.2656 31.8706 36.0632Z" fill="#69748D"/>
+                        <path d="M3.77418 31.9127C2.15106 29.4926 9.79945 24.5673 17.8969 22.8179C25.8695 21.0949 28.1739 22.9344 28.1713 31.0177C28.1699 36.9429 26.6636 39.1195 22.6515 38.995C17.0921 38.8224 5.48926 34.4697 3.77418 31.9127Z" fill="#69748D"/>
+                        </svg>
+                        
+                    <h4 class="text-lg font-medium ml-2">Magize.co</h4>
                     Voir
                     <svg class="w-2.5 h-auto mt-1 group-hover:translate-x-1 transition ease-in-out" width="17"
                         height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -198,7 +203,7 @@
                 </a>
                 <div id="tooltip-geoloc" role="tooltip"
                     class="transition-opacity duration-200 inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 tooltip">
-                    Script JS de gélolocation
+                    API de gélolocation Open Source
                 </div>
                 <a class="group mt-5 inline-flex w-fit items-center gap-1 text-sm" data-tooltip-target="tooltip-geoloc"
                     target="_blank" href="https://geoloc.dev/">
@@ -233,22 +238,6 @@
                     class="transition-opacity duration-200 inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 shadow-sm opacity-0 tooltip">
                     Marque streetwear + Ecommerce
                 </div>
-                <a class="group mt-5 inline-flex w-fit items-center gap-2 text-sm"
-                    data-tooltip-target="tooltip-pardefaut" target="_blank" href="https://pardefaut-landing.vercel.app/">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M10.7579 3H0V12.0944H5.08557V9.96368H10.7579C13.868 9.96368 16 8.50859 16 6.48184C16 4.4551 13.868 3 10.7579 3ZM9.77995 7.10546H5.08557V5.85823H9.77995C10.2885 5.85823 10.9144 5.85823 10.9144 6.48184C10.9144 7.10546 10.2885 7.10546 9.77995 7.10546Z"
-                            fill="#66748C" />
-                    </svg>
-                    <h4 class="text-lg font-medium ml-2">Pardéfaut</h4>
-                    Voir
-                    <svg class="w-2.5 h-auto mt-1 group-hover:translate-x-1 transition ease-in-out" width="17"
-                        height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M1 7C0.447715 7 -3.73832e-07 7.44771 -3.49691e-07 8C-3.2555e-07 8.55228 0.447715 9 1 9L13.0858 9L7.79289 14.2929C7.40237 14.6834 7.40237 15.3166 7.79289 15.7071C8.18342 16.0976 8.81658 16.0976 9.20711 15.7071L16.0303 8.88388C16.5185 8.39573 16.5185 7.60427 16.0303 7.11612L9.20711 0.292893C8.81658 -0.0976318 8.18342 -0.0976318 7.79289 0.292893C7.40237 0.683417 7.40237 1.31658 7.79289 1.70711L13.0858 7L1 7Z"
-                            fill="currentColor" />
-                    </svg>
-                </a>
             </div>
         </div>
         <hr class="pb-10 mt-10 slide-top">
@@ -320,9 +309,10 @@
     <div class="bg-right text-white px-14 lg:px-18 lg:w-[35%] w-[100%] pb-10 slide-left">
         <h4 class="text-lg text-white opacity-70 pt-10 pb-6">À propos de moi</h4>
         <p>
-            Grâce à mes compétences stratégiques et techniques, je peux gérer des projets web de A à Z.
-            À l'aise de la conceptualisation aux détails techniques d'un site internet, je suis un véritable 
-            couteau-suisse qui connais le web comme sa poche
+            À l'aise de la conceptualisation aux détails techniques d'un site internet, je suis un
+            véritable couteau suisse qui connais le web comme sa poche. Je suis à la recherche
+            de nouveaux défis techniques pour monter en compétences et en apprendre
+            davantages sur le développement Front End.
         </p>
         <div class="flex mt-5 gap-2 text-white opacity-70">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -331,10 +321,10 @@
                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
-            <p>Paris — Lille</p>
+            <p>Paris — Asnières-sur-Seine</p>
         </div>
 
-        <h4 class="text-lg text-white opacity-70 pt-10 pb-6">Savoir-faire</h4>
+        <h4 class="text-lg text-white opacity-70 pt-10 pb-6">Tech Stack</h4>
         <ul class="list-disc ml-4">
             <li>HTML5, CSS3</li>
             <li>React, Next</li>
@@ -344,7 +334,7 @@
             <li>UI/UX Design</li>
         </ul>
 
-        <h4 class="text-lg text-white opacity-70 pt-10 pb-6">Savoir-être</h4>
+        <h4 class="text-lg text-white opacity-70 pt-10 pb-6">Soft Skills</h4>
         <ul class="list-disc ml-4">
             <li>Patience</li>
             <li>Empathie</li>
@@ -396,7 +386,7 @@
         </div>
         <h4 class="text-lg text-white opacity-70 pt-10 pb-6">Ma musique du moment</h4>
         <iframe style="border-radius:12px"
-            src="https://open.spotify.com/embed/track/5RBOcBpJXaNnHCGViJmYhh?theme=0" width="100%"
+            src="https://open.spotify.com/embed/track/3jHdKaLCkuNEkWcLVmQPCX?theme=0" width="100%"
             height="80" frameBorder="0" allowfullscreen=""
             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
         </iframe>
