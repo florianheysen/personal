@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+main {
+  padding: 4em;
+}
+
+.textArea {
+  display: flex;
+  gap: 0.2rem;
+  font-size: 24px;
+  font-weight: 600;
+  flex-wrap: wrap;
+  cursor: default;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+  line-height: 1.6;
+}
+
+.serif {
+  font-size: 25px;
+  padding-bottom: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Playfair Display";
+}
+
+.sans {
+  font-family: "Inter";
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.clickable {
+  font-family: "Inter";
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  cursor: cell;
+  transition: .3s;
+}
+
+.clickable:hover {
+  background-color: lightgray;
+}
+
+.external {
+  position: relative;
+  font-family: "Inter";
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px;
+  background-color: #eaeaea;
+  border-radius: 5px;
+  cursor: alias;
+  transition: .3s;
+}
+
+.external:hover {
+  background-color: lightgray;
+}
+
+.external:after{
+  content: url('/external.svg');
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  top: -22px;
+  right:3px;
+}
+
+.disabled {
+ cursor: default;
+ background-color: #F9F9F9;
+}
+
+.disabled:hover {
+  background-color: #F9F9F9;
+}
+
+.fantasy {
+  font-family: 'Parisienne', cursive;
+  font-size: 25px;
+  transform: rotate(-7deg);
+}
+
+.rotate {
+  animation: rotation 7s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: "Inter";
+  font-weight: 500;
+  cursor: default;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #0ec40e;
+  border-radius: 50%;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: .3
+  }
+  50% {
+    opacity: 1
+  }
+}
+
